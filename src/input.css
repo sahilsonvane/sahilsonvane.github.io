@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+
+/* blue theme ---> */
+    --primary-color: #6F00FF;   
+    --secondary-color: #737CA1;   
+    --accent-color: #1f2937 ;
+    --background-color: #ecf0f1;
+    --text: #222;
+    --hero-bg: linear-gradient(135deg, #E5EDF1, #96C2DB, #E5EDF1);
+    --overlay: rgba(255,255,255,0.5);
+
+/* Purple light theme */
+    /* --primary-color: #7026ed;    
+    --scondary-color: #6b7280;   
+    --accent-color: #470e9d ;
+    --background-color: #dde2ff;
+    --text: #1a033b;
+    --hero-bg: linear-gradient(135deg, #E5EDF1, #470e9d, #E5EDF1);
+    --overlay: rgba(255,255,255,0.5); */
+
+
+/* Cherry red theme */
+    /* --primary-color: #5DB075  ;    
+    --scondary-color: #83D99A  ;   
+    --accent-color: #36802D  ;
+    --background-color: #F2F5EB  ;
+    --text: #444;
+    --hero-bg: linear-gradient(135deg, #E5EDF1, #36802D , #E5EDF1);
+    --overlay: rgba(255,255,255,0.5); */
+
+}
+
+.dark{
+    --primary-color: #2272FF;    
+    --secondary-color: #b3b3b3;   
+    --accent-color: #82B1FF ;
+    --background-color: #252525;
+    --text: #f2f2f2;
+    --hero-bg: linear-gradient(135deg, #282829, #3b68b8c5,  #272729);
+    --overlay: rgba(0,0,0,0.3);
+}
+
+@layer components{
+.badge{
+    @apply px-2 py-1 border border-txt-color text-txt-color text-sm;
+  }
+}
