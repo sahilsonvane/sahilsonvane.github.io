@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahil Sonvane</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <script
+      src="https://kit.fontawesome.com/33cebb3b10.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+
+  <body class="bg-bg-color">
+    <!-- Navigation bar -->
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <div class="avtar">
+          <img src="./images/me.jpg" alt="admin avtar" />
+        </div>
+        <a href="." class="mt-2 text-xl lg:text-2xl font-bold">Sahil Sonvane</a>
+      </div>
+      <ul>
+        <li>
+          <a class="nav-link" href="#about"
+            ><span data-hover="About">About</span></a
+          >
+        </li>
+
+        <li>
+          <a class="nav-link" href="#education"
+            ><span data-hover="Ecducation">Ecducation</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#skills"
+            ><span data-hover="Skills">Skills</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#my-projects"
+            ><span data-hover="Projects">Projects</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#certifications"
+            ><span data-hover="Certificates">Certificates</span></a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#contact"
+            ><span data-hover="Contact">Contact</span></a
+          >
+        </li>
+      </ul>
+      <!-- Dark mode toggle switch -->
+      <label class="switch">
+        <span class="sun"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g fill="#ffd43b">
+              <circle r="5" cy="12" cx="12"></circle>
+              <path
+                d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+              ></path>
+            </g></svg
+        ></span>
+        <span class="moon"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path
+              d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+            ></path></svg
+        ></span>
+        <input type="checkbox" class="input" id="switch-btn" />
+        <span class="slider"></span>
+      </label>
+      <!-- Hamburger menu -->
+      <label for="menu-icon" class="hamburger-menu sm:hidden">
+        <input type="checkbox" id="menu-icon" />
+      </label>
+    </nav>
+
+    <!-- mobile menu -->
+    <ul class="nav-item" id="nav-item">
+      <li>
+        <a class="nav-link" href="#about"
+          ><span data-hover="About">About</span></a
+        >
+      </li>
+      <li>
+        <a class="nav-link" href="#skills"
+          ><span data-hover="Skills">Skills</span></a
+        >
+      </li>
+      <li>
+        <a class="nav-link" href="#education"
+          ><span data-hover="Ecducation">Ecducation</span></a
+        >
+      </li>
+      <li>
+        <a class="nav-link" href="#my-projects"
+          ><span data-hover="Projects">Projects</span></a
+        >
+      </li>
+      <li>
+        <a class="nav-link" href="#certifications"
+          ><span data-hover="Certificates">Certificates</span></a
+        >
+      </li>
+      <li>
+        <a class="nav-link" href="#contact"
+          ><span data-hover="Contact">Contact</span></a
+        >
+      </li>
+    </ul>
+    <!--      -->
+    <!-- hero section -->
+    <section class="hero min-h-screen">
+      <div class="inner min-h-screen">
+        <div class="text-box">
+          <p class="heading-light">Welcome to my portfolio website!</p>
+          <!-- <h2 class="text-sm">Hey folks, I'm Sahil Sonvane</h2> -->
+          <h1>
+            <span class="mr-2"
+              >Hey folks, I'm <span class="brk">Sahil Sonvane</span></span
+            >
+          </h1>
+          <h1 class="animated animated-text">
+            I'm a
+            <div class="animated-info">
+              <span class="animated-item">Frelancer</span>
+              <span class="animated-item">Web Developer</span>
+              <span class="animated-item">Js Developer</span>
+            </div>
+          </h1>
+          <!-- <h1 class="animated animated-text">
+            <span class="mr-2">I'm a,<span class="brk"> I'm a</span></span>
+            <div class="animated-info">
+              <span class="animated-item">Sahil Sonvane</span>
+              <span class="animated-item">Frelancer</span>
+              <span class="animated-item">Web Developer</span>
+              <span class="animated-item">Js Developer</span>
+            </div>
+          </h1> -->
+          <p class="para-text fade-up">
+            Creating Clean, Functional Websites with HTML, CSS, JavaScript and
+            Modern Web Tools.
+          </p>
+          <div class="buttons fade-up">
+            <button class="button" type="button">
+              <a href="./src/Resume Sahil Sonvane.pdf" download="" class="button__text">Download cv</a>
+              <span class="button__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 35 35"
+                  id="bdd05811-e15d-428c-bb53-8661459f9307"
+                  data-name="Layer 2"
+                  class="svg">
+                  <path
+                    d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"
+                  ></path>
+                  <path
+                    d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"
+                  ></path>
+                  <path
+                    d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"
+                  ></path></svg
+              ></span>
+            
+            </button>
+            <a href="#contact" class="btn">Get in Touch</a>
+          </div>
+        </div>
+        <div class="image-box fade-up">
+          <img src="./images/sahil-sonvane.png" class="subject-img" />
+          <img src="./images/reactjs.png" class="floating-icon" alt="" />
+          <img src="./images/javascript.png" class="floating-icon" alt="" />
+          <img src="./images/code.png" class="floating-icon" alt="" />
+          <img src="./images/css-3d.png" class="floating-icon" alt="" />
+          <img src="./images/tailwindcss.png" class="floating-icon" alt="" />
+          <img src="./images/python.png" class="floating-icon" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- hero section is ended -->
+
+    <!-- about section -->
+    <section
+      id="about"
+      class="pt-[90px] lg:pt-[150px] flex flex-col lg:flex-row lg:px-[10%] justify-between items-center"
+    >
+      <div class="md:w-[500px] mx-auto lg:w-[45%] fade-up">
+        <div class="block lg:hidden text-center">
+          <h4 class="text-secondary text-lg mt-4 lg:mt-0">Who Am I ?</h4>
+          <h1 class="text-4xl mb-3 font-bold text-primary">About Myself</h1>
+        </div>
+        <div class="bg-[#d2d2d2] w-11/12 mx-auto lg:w-96">
+          <img src="./images/sahil.png" alt="user portrait" />
+        </div>
+      </div>
+      <div
+        class="about-text text-center lg:text-start px-3 lg:px-10 lg:w-3/5 fade-up"
+      >
+        <div class="hidden lg:block">
+          <h4 class="text-secondary text-lg mt-4 lg:mt-0">Who Am I ?</h4>
+          <h1 class="text-4xl mb-5 font-bold text-txt-color">About Myself</h1>
+        </div>
+
+        <p class="text-sm lg:text-base lg:text-justify text-txt-color">
+          My name is <strong>Sahil Sonvane</strong>, and I proudly hold a B.Tech in Computer
+          Science and Engineering, having graduated in 2024. As a passionate web
+          developer and software engineer, I specialize in creating dynamic and
+          impactful digital experiences. With expertise in programming languages
+          such as JavaScript, PHP, and Python, I thrive on solving complex
+          challenges and delivering innovative solutions that elevate user
+          interaction and software performance. I'm excited to continue
+          expanding my skills and contributing to cutting-edge projects in the
+          tech industry.
+        </p>
+
+        
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="pt-[90px] px-3 lg:px-6" id="education">
+      <div class="bg-primary lg:px-[10%] py-[8%] mx-auto rounded-3xl">
+        <div class="text-center mt-4 fade-up">
+          <h2 class="text-gray-300 text-lg">What are my Almamater ?</h2>
+          <h1 class="font-bold text-slate-100 text-4xl mt-4">Education</h1>
+        </div>
+        <main class="mx-auto pt-5 flex justify-center gap-5 lg:flex-col">
+          <!-- education progress bar  -->
+          <div
+            class="flex flex-col-reverse ml-4 lg:ml-0 lg:flex-row education-progress-box"
+          >
+            <div class="flex-1 lg:my-4 z-[2]">
+              <div
+                class="w-14 h-14 rounded-[50%] bg-slate-100 grid place-items-center font-mono text-sm"
+              >
+                2016
+              </div>
+            </div>
+            <div class="flex-1 lg:my-4 z-[2]">
+              <div
+                class="w-14 h-14 rounded-[50%] bg-slate-100 grid place-items-center text-sm font-mono"
+              >
+                2018
+              </div>
+            </div>
+            <div class="flex-1 lg:my-4 z-[2]">
+              <div
+                class="w-14 h-14 rounded-[50%] bg-slate-100 grid place-items-center text-sm font-mono"
+              >
+                2021
+              </div>
+            </div>
+            <div class="flex-1 lg:my-4 z-[2]">
+              <div
+                class="w-14 h-14 rounded-[50%] bg-slate-100 grid place-items-center text-sm font-mono"
+              >
+                2024
+              </div>
+            </div>
+          </div>
+          <!-- education details -->
+          <div
+            class="flex flex-col-reverse gap-4 lg:gap-0 lg:flex-row justify-center text-slate-200"
+          >
+            <div class="flex-1 fade-up">
+              <h2 class="font-bold text-xl md:text-2xl">High School</h2>
+              <h3>Gurukul Vidhyapeeth H.S School, Pandhurna</h3>
+              <h3>State Board, Bhopal</h3>
+            </div>
+            <div class="flex-1 fade-up">
+              <h2 class="font-bold text-xl md:text-2xl">Higher Secondary</h2>
+              <h3>Science (Maths)</h3>
+              <h3>RDHS School, Pandhurna</h3>
+              <h3>State Board, Bhopal</h3>
+            </div>
+            <div class="flex-1 fade-up">
+              <h2 class="font-bold text-xl md:text-2xl">Diploma</h2>
+              <h3>Branch - C.S.E</h3>
+              <h3>Govt. Polytechnic College, Ujjain</h3>
+              <h3>RGPV University, Bhopal</h3>
+            </div>
+            <div class="flex-1 fade-up">
+              <h2 class="font-bold text-xl md:text-2xl">
+                Bachelor's of Technology
+              </h2>
+              <h3>Branch - C.S.E</h3>
+              <h3>SGSITS College, Ujjain</h3>
+              <h3>RGPV University, Bhopal</h3>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- Skill block -->
+    <section id="skills" class="min-h-screen pt-[90px]">
+      <div class="text-center mb-10 fade-up">
+        <h3 class="mb-4 text-secondary text-lg">
+          What programming languages do I know?
+        </h3>
+        <h2 class="text-3xl text-primary font-bold md:text-4xl md:text-bold">
+          Skills
+        </h2>
+      </div>
+      <div
+        class="w-full lg:px-[10%] mx-auto flex flex-col-reverse gap-4 items-center lg:flex-row"
+      >
+        <!-- Skills Bar  -->
+        <div
+          id="skill-bar"
+          class="mt-4 lg:mt-0 w-full md:w-10/12 lg:w-[50%] p-4 md:p-7"
+        >
+          <h2 class="text-xl text-center text-txt-color font-bold mb-5 fade-up">
+            Technical Skills
+          </h2>
+
+          <div class="s-shadow dark:bg-[#3b3b3b] rounded-2xl p-4 mb-5 fade-up">
+            <h2 class="text-lg font-semibold text-txt-color">
+              Frontend Development
+            </h2>
+            <div class="flex justify-between">
+              <p class="text-secondary text-sm">
+                In Progress <span>. . .</span>
+              </p>
+              <p
+                class="text-sm text-txt-color progress-percentage"
+                data-percentage="60"
+              >
+                0%
+              </p>
+            </div>
+            <div
+              class="w-full bg-gray-200 dark:bg-gray-500 rounded-full h-1.5 my-2"
+            >
+              <div id="progress-60" class="h-1.5 rounded-full"></div>
+            </div>
+          </div>
+
+          <div class="s-shadow dark:bg-[#3b3b3b] rounded-2xl p-4 mb-5 fade-up">
+            <h2 class="text-lg font-semibold text-txt-color">WordPress</h2>
+            <div class="flex justify-between">
+              <p class="text-secondary text-sm">
+                In Progress <span>. . .</span>
+              </p>
+              <p
+                class="text-sm text-txt-color progress-percentage"
+                data-percentage="75"
+              >
+                0%
+              </p>
+            </div>
+            <div
+              class="w-full bg-gray-200 dark:bg-gray-500 rounded-full h-1.5 my-2"
+            >
+              <div id="progress-75" class="h-1.5 rounded-full"></div>
+            </div>
+          </div>
+          <div class="s-shadow dark:bg-[#3b3b3b] rounded-2xl p-4 mb-5 fade-up">
+            <h2 class="text-lg font-semibold text-txt-color">Photoshop</h2>
+            <div class="flex justify-between">
+              <p class="text-secondary text-sm">
+                In Progress <span>. . .</span>
+              </p>
+              <p
+                class="text-sm text-txt-color progress-percentage"
+                data-percentage="64"
+              >
+                0%
+              </p>
+            </div>
+            <div
+              class="w-full bg-gray-200 dark:bg-gray-500 rounded-full h-1.5 my-2"
+            >
+              <div id="progress-64" class="h-1.5 rounded-full"></div>
+            </div>
+          </div>
+          <div class="s-shadow dark:bg-[#3b3b3b] rounded-2xl p-4 mb-5 fade-up">
+            <h2 class="text-lg font-semibold text-txt-color">
+              Computer Hardware And Networking
+            </h2>
+            <div class="flex justify-between">
+              <p class="text-secondary text-sm">
+                In Progress <span>. . .</span>
+              </p>
+              <p
+                class="text-sm text-txt-color progress-percentage"
+                data-percentage="70"
+              >
+                0%
+              </p>
+            </div>
+            <div
+              class="w-full bg-gray-200 dark:bg-gray-500 rounded-full h-1.5 my-2"
+            >
+              <div id="progress-70" class="h-1.5 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Programming  language grid -->
+        <div class="w-full h-auto md:w-10/12 md:py-3 lg:w-2/4">
+          <h2 class="text-xl text-center text-txt-color font-bold mb-5 fade-up">
+            Programming Languages
+          </h2>
+          <div class="w-full h-auto md:h-[500px] grid grid-cols-3">
+            <div class="flex items-end justify-center h-full">
+              <div
+                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 overflow-visible z-10 flex flex-col items-center justify-center mb-[-40px] text-txt-color"
+              >
+                <img
+                  class="w-9 md:w-14 mb-2"
+                  src="images/html.png"
+                  alt="HTML"
+                />
+                <p>HTML</p>
+              </div>
+            </div>
+            <div
+              class="mb-3 md:mb-0 flex flex-col items-center justify-start h-full"
+            >
+              <div
+                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 flex flex-col items-center justify-center text-txt-color"
+              >
+                <img class="w-9 md:w-14 mb-2" src="images/css.png" alt="CSS" />
+                <p>CSS</p>
+              </div>
+            </div>
+            <div class="flex items-end justify-center h-full">
+              <div
+                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 overflow-visible z-10 flex flex-col items-center justify-center mb-[-40px] text-txt-color"
+              >
+                <img
+                  class="w-9 md:w-14 mb-2"
+                  src="images/reactjs.png"
+                  alt="reactjs"
+                />
+                <p>ReactJs</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center h-full"></div>
+
+            <div class="h-full flex items-center justify-center">
+              <div
+                class="border s-shadow fade-up rounded-md md:p-3 p-2 flex flex-col items-center justify-center text-txt-color"
+              >
+                <img
+                  class="w-[64px] md:w-[122px] rounded-md mb-2"
+                  src="images/js.png"
+                  alt="JS"
+                />
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div
+              class="gap-4 flex flex-col items-center justify-center h-full"
+            ></div>
+
+            <div class="flex flex-col items-center justify-start h-full">
+              <div
+                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 overflow-visible z-10 flex flex-col items-center justify-center mt-[-40px] text-txt-color"
+              >
+                <img class="w-9 md:w-14 mb-2" src="images/php.png" alt="PHP" />
+                <p>PHP</p>
+              </div>
+            </div>
+            <div
+              class="mt-3 md:mt-0 flex flex-col items-center justify-end h-full"
+            >
+              <div
+                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 flex flex-col items-center justify-center text-txt-color"
+              >
+                <img
+                  class="w-9 md:w-14 mb-2"
+                  src="images/tailwindcss.png"
+                  alt="TAILWINDCSS"
+                />
+                <p class="text-sm">Tailwind Css</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-start h-full">
+              <div
+                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 overflow-visible z-10 flex flex-col items-center justify-center mt-[-40px] text-txt-color"
+              >
+                <img
+                  class="w-8 md:w-11 mb-2"
+                  src="images/bootstrap.png"
+                  alt="BOOTSTRAP"
+                />
+                <p>BootStrap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skill Section ended!! -->
+
+    <!-- Projects Section  -->
+    <section id="my-projects" class="min-h-screen pt-[90px]">
+      <div class="text-center mb-10 fade-up">
+        <h3 class="mb-2 text-secondary text-lg">What I did ?</h3>
+        <h1 class="text-3xl text-primary font-bold md:text-4xl md:text-bold">
+          My Projects
+        </h1>
+      </div>
+      <div
+        class="w-full lg:px-[10%] px-4 min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5 lg:items-center lg:justify-evenly"
+      >
+        <div
+          class="p-2 relative s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+        >
+          <img class="object-cover" src="images/sosoapy.png" alt="" />
+          <div class="foreground-overlay">
+            <h2 class="text-primary text-3xl my-2 font-bold">soosoapy.in</h2>
+            <p class="text-txt-color text-base">Ecommerce Web store</p>
+            <div class="flex flex-wrap gap-1 my-1">
+              <span class="badge">WordPress</span>
+              <span class="badge">Woocommerce</span>
+            </div>
+            <a
+              class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
+              href="https://soosoapy.in/"
+              target="_blank"
+            >
+              View</a
+            >
+          </div>
+        </div>
+        <div
+          class="relative p-2 s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+        >
+          <img class="object-cover" src="images/priya-enterprises.png" alt="" />
+          <div class="foreground-overlay">
+            <h2 class="text-primary text-3xl my-2 font-bold">
+              priyarawsupplies.in
+            </h2>
+            <p class="text-txt-color text-base">Ecommerce Web store</p>
+            <div class="flex flex-wrap gap-1 my-1">
+              <span class="badge">WordPress</span>
+              <span class="badge">Woocommerce</span>
+            </div>
+            <a
+              class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
+              href="https://priyarawsupplies.in/"
+              target="_blank"
+            >
+              View</a
+            >
+          </div>
+        </div>
+        <div
+          class="relative p-2 s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+        >
+          <img class="object-cover" src="images/inm.png" alt="" />
+          <div class="foreground-overlay">
+            <h2 class="text-primary text-3xl my-2 font-bold">
+              absorbentcotton.org
+            </h2>
+            <p class="text-txt-color text-base">Company's Portfolio</p>
+            <div class="flex flex-wrap gap-1 my-1">
+              <span class="badge">WordPress</span>
+              <span class="badge">Elementor</span>
+            </div>
+            <a
+              class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
+              href="https://absorbentcotton.org/"
+              target="_blank"
+            >
+              View</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="relative p-2 s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+        >
+          <img class="object-cover" src="images/mini-js-project.png" alt="" />
+          <div class="foreground-overlay">
+            <h2 class="text-primary text-3xl my-2 font-bold">
+              30+ Js Projects
+            </h2>
+            <p class="text-txt-color text-base">JavaScript Projects</p>
+            <div class="flex flex-wrap gap-1 my-1">
+              <span class="badge">JavaScript</span>
+              <span class="badge">CSS</span>
+              <span class="badge">HTML</span>
+            </div>
+            <div class="my-2 flex justify-center gap-2 w-full items-center">
+              <a
+                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
+                href="https://sahilsonvane.github.io/30-plus-mini-js-projects/"
+                target="_blank "
+              >
+                View</a
+              >
+              <a
+                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
+                href="https://github.com/sahilsonvane/30-plus-mini-js-projects"
+                target="_blank "
+              >
+                Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative p-2 s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+        >
+          <img class="object-cover" src="images/cvmaker.png" alt="" />
+          <div class="foreground-overlay">
+            <h2 class="text-primary text-3xl my-2 font-bold">Cv Maker</h2>
+            <p class="text-txt-color text-base">A Cv builder Tool</p>
+            <div class="flex flex-wrap gap-1 my-1">
+              <span class="badge">PHP</span>
+              <span class="badge">MySQL</span>
+              <span class="badge">JavaScript</span>
+            </div>
+            <div class="my-2 flex justify-center gap-2 w-full items-center">
+              <a
+                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
+                href="https://cvmaker.42web.io/"
+                target="_blank "
+              >
+                View</a
+              >
+              <a
+                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
+                href="https://github.com/sahilsonvane/php-cv-maker-app"
+                target="_blank "
+              >
+                Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative p-2 s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+        >
+          <img class="object-cover" src="images/fcc-projects.png" alt="" />
+          <div class="foreground-overlay">
+            <h2 class="text-primary text-3xl my-2 font-bold">
+              Projects of FCC
+            </h2>
+            <p class="text-txt-color text-base">Responsive Web Designs</p>
+            <div class="flex flex-wrap gap-1 my-1">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+            </div>
+            <div class="my-2 flex justify-center gap-2 w-full items-center">
+              <a
+                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
+                href="https://sahilsonvane.github.io/projects-for-fcc/"
+                target="_blank "
+              >
+                View</a
+              >
+              <a
+                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
+                href="https://github.com/sahilsonvane/projects-for-fcc"
+                target="_blank "
+              >
+                Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section id="certifications" class="pt-[90px]">
+      <div class="text-center mb-10 fade-up">
+        <h3 class="mb-1 text-secondary text-lg">What I Earned?</h3>
+        <h2 class="text-3xl text-primary font-bold md:text-3xl md:text-bold">
+          Certificaitons
+        </h2>
+      </div>
+      <div
+        class="w-full lg:px-[10%] px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5 lg:items-center lg:justify-evenly"
+      >
+        <div class="relative certificate-container fade-up">
+          <img src="images/js-certificate.png" alt="" />
+          <div class="foreground-overlay">
+            <a href="#" class="popup-trigger"
+              ><i class="fa fa-eye text-3xl text-primary"></i
+            ></a>
+            <p class="text-lg text-txt-color">Javascript Essential Program</p>
+          </div>
+        </div>
+
+        <div class="relative certificate-container fade-up">
+          <img src="images/fcc-certificate.png" alt="" />
+          <div class="foreground-overlay">
+            <a href="#" class="popup-trigger"
+              ><i class="fa fa-eye text-3xl text-primary"></i
+            ></a>
+            <p class="text-lg text-txt-color">Responsive Web Design by FCC</p>
+          </div>
+        </div>
+        <div class="relative certificate-container fade-up">
+          <img src="images/react-certificate.png" alt="" />
+          <div class="foreground-overlay">
+            <a href="#" class="popup-trigger"
+              ><i class="fa fa-eye text-3xl text-primary"></i
+            ></a>
+            <p class="text-lg text-txt-color">React Certification Program</p>
+          </div>
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="image-popup" class="popup-modal hidden fixed inset-0 z-50">
+          <div
+            class="relative w-[80%] max-w-2xl mx-auto bg-gray-200 p-2 lg:p-4 rounded shadow-lg"
+          >
+            <img
+              src=""
+              alt=""
+              id="popup-image"
+              class="max-w-full h-auto rounded"
+            />
+            <button
+              id="close-popup"
+              class="absolute h-max w-max top-1 right-1 text-sm"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification Section Ended -->
+    <!-- Contact Section  -->
+    <section id="contact" class="pt-[90px]">
+      <div class="text-center mb-10 fade-up">
+        <h3 class="mb-1 text-secondary text-lg">How can you communicate?</h3>
+        <h2 class="text-3xl text-primary font-bold md:text-3xl md:text-bold">
+          Contact Me
+        </h2>
+      </div>
+      <!-- contact Information  -->
+      <div class="flex flex-col gap-5 lg:flex-row lg:justify-evenly">
+        <div class="p-3 w-auto lg:w-[400px] text-center">
+          <h2 class="text-xl text-accent font-bold mb-3 fade-up">
+            Let's Build Something Amazing Together!
+          </h2>
+          <p class="md:w-2/3 text-txt-color md:mx-auto lg:w-full fade-up">
+            I'm excited to hear about your project ideas and how I can help
+            bring them to life. Whether you need a stunning website, a robust
+            web application, or just want to chat about the latest web
+            development trends, I'm here to assist you. Drop me a message, and
+            let's create something extraordinary together!
+          </p>
+        </div>
+        <div
+          class="p-3 flex flex-col gap-4 mb-5 mx-auto lg:mx-0 text-txt-color fade-up"
+        >
+          <h2 class="text-xl font-bold text-accent text-center">
+            Contact Details
+          </h2>
+          <div class="flex gap-2">
+            <i
+              class="w-7 fa-solid fa-mobile-screen-button text-accent text-xl border border-accent self-center p-1 grid place-items-center"
+            ></i>
+            <div>
+              <p class="font-bold">Mobile No :</p>
+              <p>+91 7400633774</p>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <i
+              class="w-7 fa-solid fa-envelope text-accent text-lg border border-accent self-center p-1 grid place-items-center"
+            ></i>
+            <div>
+              <span class="font-bold">Email Address :</span>
+              <p>sahilsonvane24@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <i
+              class="w-7 fa-solid fa-location-dot text-accent text-xl border border-accent self-center p-1 grid place-items-center"
+            ></i>
+            <div>
+              <span class="font-bold">Address :</span>
+              <p>Mahanada Nagar, Ujjain (M.P.)</p>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <div
+          id="contact-form"
+          class="w-[85%] md:w-[500px] lg:w-[400px] text-txt-color bg-gray-100 dark:bg-[#3b3b3b] fade-up self-center py-[60px] px-5 lg:px-10 mb-[-40px] lg:mb-[-70px] s-shadow"
+        >
+          <form id="form" class="flex flex-col gap-5">
+            <div><h2 class="text-xl font-bold text-center">Message Me</h2></div>
+            <div class="flex border border-gray-7">
+              <i class="fa-solid fa-user border-r border-gray-7 p-2"></i
+              ><input
+                id="client-name"
+                type="text"
+                class="w-full bg-transparent py-1 px-2 outline-none placeholder-secondary"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="flex border border-gray-7">
+              <i class="fa-solid fa-envelope border-r border-gray-7 p-2"></i
+              ><input
+                id="client-email"
+                type="email"
+                class="w-full bg-transparent py-1 px-2 outline-none placeholder-secondary"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <div class="flex border border-gray-7">
+              <textarea
+                id="client-message"
+                type="text"
+                class="w-full bg-transparent outline-none placeholder-secondary p-2"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <input
+              id="submit"
+              type="submit"
+              value="Send"
+              class="rounded-2xl py-2 bg-accent text-gray-200"
+            />
+            <p
+              id="success"
+              class="hidden text-green-700 dark:text-green-400 text-sm"
+            >
+              Thank you for reaching out! I'll get back to you soon.
+            </p>
+            <p id="error" class="hidden text-red-500 text-sm">
+              Please fill out the contact form for better assistance. Thank you!
+            </p>
+          </form>
+        </div>
+      </div>
+      <!-- Social media hadles -->
+      <div class="h-48 bg-primary text-bg-color py-10 lg:py-0">
+        <div
+          class="lg:ml-16 pt-10 flex flex-col justify-center items-center lg:justify-start lg:items-start"
+        >
+          <h2 class="mb-4 text-base text-gray-200 lg:text-xl">
+            Just Connect Me any of This
+          </h2>
+          <div class="flex gap-5">
+            <a
+              href="https://www.linkedin.com/in/sahil-sonvane"
+              target="_blank"
+              class="bg-gray-100 p-1 rounded-full"
+              ><img class="w-11" src="images/linkedin.png" alt="Linkedin"
+            /></a>
+            <a
+              href="https://github.com/sahilsonvane"
+              target="_blank"
+              class="bg-gray-100 p-1 rounded-full"
+              ><img class="w-11" src="images/github.png" alt="Github"
+            /></a>
+            <a href="#" target="_blank" class="bg-gray-100 p-1 rounded-full"
+              ><img class="w-11" src="images/whatsapp.png" alt="WhatsApp"
+            /></a>
+            <a
+              href="https://www.instagram.com/sahil_sonvane/"
+              target="_blank"
+              class="bg-gray-100 p-1 rounded-full"
+              ><img class="w-11" src="images/instagram.png" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer
+        class="bg-gray-700 border-t px-4 py-4 md:px-14 lg:px-16 text-gray-50 text-xs md:text-sm flex justify-between"
+      >
+        <p>Thank You For Visiting!</p>
+        <p class=" ">Design and Developed by Myself</p>
+      </footer>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
