@@ -5,13 +5,21 @@
 :root{
 
 /* blue theme ---> */
-    --primary-color: #6F00FF;   
+    --primary-color: #009F88;   
+    --secondary-color: #737CA1;   
+    --accent-color: #30817f ;
+    --background-color: #ecf0f1;
+    --text: #222;
+    --hero-bg: linear-gradient(135deg, #E5EDF1, #009f8790, #E5EDF1);
+    --overlay: rgba(255,255,255,0.5);
+
+    /* --primary-color: #6F00FF;   
     --secondary-color: #737CA1;   
     --accent-color: #1f2937 ;
     --background-color: #ecf0f1;
     --text: #222;
     --hero-bg: linear-gradient(135deg, #E5EDF1, #96C2DB, #E5EDF1);
-    --overlay: rgba(255,255,255,0.5);
+    --overlay: rgba(255,255,255,0.5); */
 
 /* Purple light theme */
     /* --primary-color: #7026ed;    
@@ -37,7 +45,7 @@
 .dark{
     --primary-color: #2272FF;    
     --secondary-color: #b3b3b3;   
-    --accent-color: #82B1FF ;
+    --accent-color: #1254c0 ;
     --background-color: #252525;
     --text: #f2f2f2;
     --hero-bg: linear-gradient(135deg, #282829, #3b68b8c5,  #272729);

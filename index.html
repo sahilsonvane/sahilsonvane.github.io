@@ -180,6 +180,12 @@
           <img src="./images/css-3d.png" class="floating-icon" alt="" />
           <img src="./images/tailwindcss.png" class="floating-icon" alt="" />
           <img src="./images/python.png" class="floating-icon" alt="" />
+          <div class="bg-circle">
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+          </div>
         </div>
       </div>
     </section>
@@ -195,7 +201,7 @@
           <h4 class="text-secondary text-lg mt-4 lg:mt-0">Who Am I ?</h4>
           <h1 class="text-4xl mb-3 font-bold text-primary">About Myself</h1>
         </div>
-        <div class="bg-[#d2d2d2] w-11/12 mx-auto lg:w-96">
+        <div class="bg-[#d2d2d2] dark:bg-[#36454f] w-4/5  mx-auto lg:w-96">
           <img src="./images/sahil.png" alt="user portrait" />
         </div>
       </div>
@@ -204,22 +210,14 @@
       >
         <div class="hidden lg:block">
           <h4 class="text-secondary text-lg mt-4 lg:mt-0">Who Am I ?</h4>
-          <h1 class="text-4xl mb-5 font-bold text-txt-color">About Myself</h1>
+          <h1 class="text-4xl mb-5 font-bold text-primary">About Myself</h1>
         </div>
 
-        <p class="text-sm lg:text-base lg:text-justify text-txt-color">
-          My name is <strong>Sahil Sonvane</strong>, and I proudly hold a B.Tech in Computer
-          Science and Engineering, having graduated in 2024. As a passionate web
-          developer and software engineer, I specialize in creating dynamic and
-          impactful digital experiences. With expertise in programming languages
-          such as JavaScript, PHP, and Python, I thrive on solving complex
-          challenges and delivering innovative solutions that elevate user
-          interaction and software performance. I'm excited to continue
-          expanding my skills and contributing to cutting-edge projects in the
-          tech industry.
-        </p>
+        <p class=" mt-4 px-3 lg:px-0 text-justify text-txt-color">
+          My name is <strong>Sahil Sonvane</strong>, and I proudly hold a B.Tech in Computer Science and Engineering from RGPV Bhopal, having graduated in 2024. As a passionate web developer and software engineer, I specialize in creating dynamic and impactful digital experiences. With expertise in programming languages such as JavaScript, PHP, and Python, I thrive on solving complex challenges and delivering innovative solutions that elevate user interaction and software performance. I'm excited to continue expanding my skills and contributing to cutting-edge projects in the tech industry.
 
-        
+
+        </p>        
       </div>
     </section>
 
@@ -266,7 +264,7 @@
           </div>
           <!-- education details -->
           <div
-            class="flex flex-col-reverse gap-4 lg:gap-0 lg:flex-row justify-center text-slate-200"
+            class="flex flex-col-reverse gap-4 lg:gap-0 lg:flex-row justify-center text-slate-100"
           >
             <div class="flex-1 fade-up">
               <h2 class="font-bold text-xl md:text-2xl">High School</h2>
@@ -512,7 +510,7 @@
         class="w-full lg:px-[10%] px-4 min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5 lg:items-center lg:justify-evenly"
       >
         <div
-          class="p-2 relative s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+          class="p-1 relative s-shadow bg-primary dark:bg-[#3b3b3b] fade-up"
         >
           <img class="object-cover" src="images/sosoapy.png" alt="" />
           <div class="foreground-overlay">
@@ -532,7 +530,7 @@
           </div>
         </div>
         <div
-          class="relative p-2 s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+          class="relative p-1 s-shadow bg-primary dark:bg-[#3b3b3b] fade-up"
         >
           <img class="object-cover" src="images/priya-enterprises.png" alt="" />
           <div class="foreground-overlay">
@@ -554,7 +552,7 @@
           </div>
         </div>
         <div
-          class="relative p-2 s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+          class="relative p-1 s-shadow bg-primary dark:bg-[#3b3b3b] fade-up"
         >
           <img class="object-cover" src="images/inm.png" alt="" />
           <div class="foreground-overlay">
@@ -577,7 +575,7 @@
         </div>
 
         <div
-          class="relative p-2 s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+          class="relative p-1 s-shadow bg-primary dark:bg-[#3b3b3b] fade-up"
         >
           <img class="object-cover" src="images/mini-js-project.png" alt="" />
           <div class="foreground-overlay">
@@ -609,7 +607,7 @@
           </div>
         </div>
         <div
-          class="relative p-2 s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+          class="relative p-1 s-shadow bg-primary dark:bg-[#3b3b3b] fade-up"
         >
           <img class="object-cover" src="images/cvmaker.png" alt="" />
           <div class="foreground-overlay">
@@ -639,7 +637,7 @@
           </div>
         </div>
         <div
-          class="relative p-2 s-shadow bg-[#f2f2f2] dark:bg-[#3b3b3b] fade-up"
+          class="relative p-1 s-shadow bg-primary dark:bg-[#3b3b3b] fade-up"
         >
           <img class="object-cover" src="images/fcc-projects.png" alt="" />
           <div class="foreground-overlay">
@@ -683,31 +681,25 @@
       <div
         class="w-full lg:px-[10%] px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5 lg:items-center lg:justify-evenly"
       >
-        <div class="relative certificate-container fade-up">
-          <img src="images/js-certificate.png" alt="" />
+        <div class="h-64 relative certificate-container fade-up">
+          <img class="w-full h-full object-cover object-center" src="images/js-certificate.png" alt="" />
           <div class="foreground-overlay">
-            <a href="#" class="popup-trigger"
-              ><i class="fa fa-eye text-3xl text-primary"></i
-            ></a>
+            <i class="popup-trigger fa fa-eye text-3xl text-primary"></i>
             <p class="text-lg text-txt-color">Javascript Essential Program</p>
           </div>
         </div>
 
-        <div class="relative certificate-container fade-up">
-          <img src="images/fcc-certificate.png" alt="" />
+        <div class="h-64 relative certificate-container fade-up">
+          <img class="w-full h-full object-cover object-center" src="images/fcc-certificate.png" alt="" />
           <div class="foreground-overlay">
-            <a href="#" class="popup-trigger"
-              ><i class="fa fa-eye text-3xl text-primary"></i
-            ></a>
+            <i class="popup-trigger fa fa-eye text-3xl text-primary"></i>
             <p class="text-lg text-txt-color">Responsive Web Design by FCC</p>
           </div>
         </div>
-        <div class="relative certificate-container fade-up">
-          <img src="images/react-certificate.png" alt="" />
+        <div class="h-64 relative certificate-container fade-up">
+          <img class="w-full h-full object-cover object-center" src="images/react-certificate.png" alt="" />
           <div class="foreground-overlay">
-            <a href="#" class="popup-trigger"
-              ><i class="fa fa-eye text-3xl text-primary"></i
-            ></a>
+            <i class="popup-trigger fa fa-eye text-3xl text-primary"></i>
             <p class="text-lg text-txt-color">React Certification Program</p>
           </div>
         </div>
