@@ -860,33 +860,11 @@
   .button .button__text {
     transform: translateX(16px);
   }
+  .bg-circle{
+    width: 150px;
+    height: 150px;
+  }
 
-  .wraper{
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px 20px;
-  }
-  .skill-card{
-   width: 170px;
-   height: 230px; 
-  }
-  .skill-card p{
-    font-size: 14px;
-  }
-  .skill-name img{
-    width: 30px;
-  }
-  .skill-name span{
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .circular-progress {
-      --size: 80px;
-      --stroke-width: 5px;
-  }
-  .inner-value{
-    font-size: 18px;
-
-  }
   .education-progress-box::after{
     width: 5px;
     height: 100%;
