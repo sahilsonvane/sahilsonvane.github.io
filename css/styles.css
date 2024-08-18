@@ -574,7 +574,9 @@
     transform:scale(2.2);
   }
 }
-
+.b-shadow{
+  box-shadow: 10px 10px var(--primary-color);
+}
 
 .education-progress-box{
   margin: 0px;
