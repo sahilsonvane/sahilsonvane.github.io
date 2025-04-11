@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/tailwind.css" />
+
     <script
       src="https://kit.fontawesome.com/33cebb3b10.js"
       crossorigin="anonymous"
@@ -23,7 +24,7 @@
     <nav class="navbar" id="navbar">
       <div class="logo">
         <div class="avtar">
-          <img src="./images/avtar-sahil.png" alt="admin avtar" />
+          <img src="/images/avtar-sahil.png" alt="admin avtar" />
         </div>
         <a href="." class="mt-2 text-xl lg:text-2xl font-bold">Sahil Sonvane</a>
       </div>
@@ -81,7 +82,7 @@
         <span class="slider"></span>
       </label>
       <!-- Hamburger menu -->
-      <label for="menu-icon" class="hamburger-menu sm:hidden">
+      <label for="menu-icon" class="hamburger-menu lg:hidden">
         <input type="checkbox" id="menu-icon" />
       </label>
     </nav>
@@ -153,32 +154,7 @@
             Modern Web Tools.
           </p>
           <div class="buttons fade-up">
-            <button class="button" type="button">
-              <a
-                href="./src/Resume Sahil Sonvane.pdf"
-                download=""
-                class="button__text"
-                >Download cv</a
-              >
-              <span class="button__icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 35 35"
-                  id="bdd05811-e15d-428c-bb53-8661459f9307"
-                  data-name="Layer 2"
-                  class="svg"
-                >
-                  <path
-                    d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"
-                  ></path>
-                  <path
-                    d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"
-                  ></path>
-                  <path
-                    d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"
-                  ></path></svg
-              ></span>
-            </button>
+            <a href="#" download="" class="btn">Download cv</a>
             <a href="#contact" class="btn">Get in Touch</a>
           </div>
         </div>
@@ -212,9 +188,13 @@
           <h1 class="text-4xl mb-3 font-bold text-primary">About Myself</h1>
         </div>
         <div
-          class="hidden lg:block bg-[#d2d2d2] dark:bg-[#36454f] w-4/5 mx-auto lg:w-80 b-shadow"
+          class="hidden lg:block bg-[#d2d2d290] dark:bg-[#656565] rounded-xl w-4/5 mx-auto lg:w-80"
         >
-          <img class="w-4/5" src="./images/sahil.png" alt="user portrait" />
+          <img
+            class="w-4/5 mx-auto"
+            src="./images/sahil-sonvane.png"
+            alt="user portrait"
+          />
         </div>
       </div>
       <div
@@ -246,7 +226,7 @@
           <h2 class="text-gray-300 text-lg">What are my Almamater ?</h2>
           <h1 class="font-bold text-slate-100 text-4xl mt-4">Education</h1>
         </div>
-        <main class="mx-auto pt-5 flex justify-center gap-5 lg:flex-col">
+        <main class="mx-auto pt-5 px-4 flex justify-center gap-5 lg:flex-col">
           <!-- education progress bar  -->
           <div
             class="flex flex-col-reverse ml-4 lg:ml-0 lg:flex-row education-progress-box"
@@ -336,7 +316,9 @@
             Technical Skills
           </h2>
 
-          <div class="s-shadow dark:bg-[#3b3b3b] rounded-2xl p-4 mb-5 fade-up">
+          <div
+            class="s-shadow bg-transparent dark:bg-[#3b3b3b] rounded-2xl p-4 mb-5 fade-up"
+          >
             <h2 class="text-lg font-semibold text-txt-color">
               Frontend Development
             </h2>
@@ -421,94 +403,84 @@
         <!-- Programming  language grid -->
         <div class="w-full h-auto md:w-10/12 md:py-3 lg:w-2/4">
           <h2 class="text-xl text-center text-txt-color font-bold mb-5 fade-up">
-            Programming Languages
+            Programming Skills
           </h2>
-          <div class="w-full h-auto md:h-[500px] grid grid-cols-3">
-            <div class="flex items-end justify-center h-full">
+          <div
+            class="h-auto md:h-[500px] flex flex-col gap-4 justify-center items-center fade-up"
+          >
+            <div class="flex gap-4 justify-center items-center">
               <div
-                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 overflow-visible z-10 flex flex-col items-center justify-center mb-[-40px] text-txt-color"
+                class="flex items-center border border-white rounded-md text-txt-color gap-2 py-2 px-4 s-shadow"
               >
-                <img
-                  class="w-9 md:w-14 mb-2"
-                  src="images/html.png"
-                  alt="HTML"
-                />
+                <img class="w-7 md:w-8" src="/images/html.png" />
                 <p>HTML</p>
               </div>
-            </div>
-            <div
-              class="mb-3 md:mb-0 flex flex-col items-center justify-start h-full"
-            >
               <div
-                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 flex flex-col items-center justify-center text-txt-color"
+                class="flex items-center border border-white rounded-md text-txt-color gap-2 py-2 px-4 s-shadow"
               >
-                <img class="w-9 md:w-14 mb-2" src="images/css.png" alt="CSS" />
+                <img class="w-7 md:w-8" src="/images/css.png" />
                 <p>CSS</p>
               </div>
             </div>
-            <div class="flex items-end justify-center h-full">
+            <div class="flex gap-4 justify-center items-center">
               <div
-                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 overflow-visible z-10 flex flex-col items-center justify-center mb-[-40px] text-txt-color"
+                class="flex items-center border border-white rounded-md text-txt-color gap-2 py-2 px-4 s-shadow"
               >
-                <img
-                  class="w-9 md:w-14 mb-2"
-                  src="images/reactjs.png"
-                  alt="reactjs"
-                />
-                <p>ReactJs</p>
+                <img class="w-7 md:w-8" src="/images/tailwindcss.png" />
+                <p>Tailwindcss</p>
+              </div>
+              <div
+                class="flex items-center border border-white rounded-md text-txt-color gap-2 py-2 px-4 s-shadow"
+              >
+                <img class="w-7 md:w-8" src="/images/bootstrap.png" />
+                <p>Bootstrap</p>
               </div>
             </div>
-            <div class="flex items-center justify-center h-full"></div>
-
-            <div class="h-full flex items-center justify-center">
+            <div class="flex gap-2 justify-center items-center">
               <div
-                class="border s-shadow fade-up rounded-md md:p-3 p-2 flex flex-col items-center justify-center text-txt-color"
+                class="flex items-center border border-white rounded-md text-txt-color gap-1 py-2 px-3 s-shadow"
               >
-                <img
-                  class="w-[64px] md:w-[122px] rounded-md mb-2"
-                  src="images/js.png"
-                  alt="JS"
-                />
+                <img class="w-7 md:w-8" src="/images/jquery.png" />
+                <p>jQuery</p>
+              </div>
+              <div
+                class="flex items-center border border-white rounded-md text-txt-color gap-1 py-2 px-3 s-shadow"
+              >
+                <img class="w-7 md:w-8" src="/images/js.png" />
                 <p>JavaScript</p>
               </div>
-            </div>
-            <div
-              class="gap-4 flex flex-col items-center justify-center h-full"
-            ></div>
-
-            <div class="flex flex-col items-center justify-start h-full">
               <div
-                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 overflow-visible z-10 flex flex-col items-center justify-center mt-[-40px] text-txt-color"
+                class="flex items-center border border-white rounded-md text-txt-color gap-1 py-2 px-3 s-shadow"
               >
-                <img class="w-9 md:w-14 mb-2" src="images/php.png" alt="PHP" />
+                <img class="w-7 md:w-8" src="/images/reactjs.png" />
+                <p>ReactJS</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-center items-center">
+              <div
+                class="flex items-center border border-white rounded-md text-txt-color gap-2 py-2 px-4 s-shadow"
+              >
+                <img class="w-7 md:w-8" src="/images/php.png" />
                 <p>PHP</p>
               </div>
+              <div
+                class="flex items-center border border-white rounded-md text-txt-color gap-2 py-2 px-3 s-shadow"
+              >
+                <img class="w-7 md:w-8" src="/images/node.png" />
+                <p>Node Js</p>
+              </div>
+              <div
+                class="flex items-center border border-white rounded-md text-txt-color gap-2 py-2 px-4 s-shadow"
+              >
+                <img class="w-7 md:w-8" src="/images/sql.png" />
+                <p>MySql</p>
+              </div>
             </div>
             <div
-              class="mt-3 md:mt-0 flex flex-col items-center justify-end h-full"
+              class="flex items-center border border-white rounded-md text-txt-color gap-2 py-2 px-4 s-shadow"
             >
-              <div
-                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 flex flex-col items-center justify-center text-txt-color"
-              >
-                <img
-                  class="w-9 md:w-14 mb-2"
-                  src="images/tailwindcss.png"
-                  alt="TAILWINDCSS"
-                />
-                <p class="text-sm">Tailwind Css</p>
-              </div>
-            </div>
-            <div class="flex flex-col items-center justify-start h-full">
-              <div
-                class="border s-shadow fade-up rounded-md w-20 py-2 md:w-24 md:py-3 overflow-visible z-10 flex flex-col items-center justify-center mt-[-40px] text-txt-color"
-              >
-                <img
-                  class="w-8 md:w-11 mb-2"
-                  src="images/bootstrap.png"
-                  alt="BOOTSTRAP"
-                />
-                <p>BootStrap</p>
-              </div>
+              <img class="w-7 md:w-8" src="/images/wordpress.png" />
+              <p>Wordpress</p>
             </div>
           </div>
         </div>
@@ -525,154 +497,10 @@
         </h1>
       </div>
       <div
-        class="w-full lg:px-[10%] px-4 min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5 lg:items-center lg:justify-evenly"
+        id="projectDiv"
+        class="w-full lg:px-[10%] px-4 min-h-screen grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5 lg:items-center lg:justify-evenly"
       >
-        <div class="p-1 relative s-shadow bg-primary dark:bg-[#3b3b3b] fade-up">
-          <img class="object-cover" src="images/sosoapy.png" alt="" />
-          <div class="foreground-overlay">
-            <h2 class="text-primary text-3xl my-2 font-bold">soosoapy.in</h2>
-            <p class="text-txt-color text-base">Ecommerce Web store</p>
-            <div class="flex flex-wrap gap-1 my-1">
-              <span class="badge">WordPress</span>
-              <span class="badge">Woocommerce</span>
-            </div>
-            <a
-              class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
-              href="https://soosoapy.in/"
-              target="_blank"
-            >
-              View</a
-            >
-          </div>
-        </div>
-        <div class="relative p-1 s-shadow bg-primary dark:bg-[#3b3b3b] fade-up">
-          <img class="object-cover" src="images/priya-enterprises.png" alt="" />
-          <div class="foreground-overlay">
-            <h2 class="text-primary text-3xl my-2 font-bold">
-              priyarawsupplies.in
-            </h2>
-            <p class="text-txt-color text-base">Ecommerce Web store</p>
-            <div class="flex flex-wrap gap-1 my-1">
-              <span class="badge">WordPress</span>
-              <span class="badge">Woocommerce</span>
-            </div>
-            <a
-              class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
-              href="https://priyarawsupplies.in/"
-              target="_blank"
-            >
-              View</a
-            >
-          </div>
-        </div>
-        <div class="relative p-1 s-shadow bg-primary dark:bg-[#3b3b3b] fade-up">
-          <img class="object-cover" src="images/inm.png" alt="" />
-          <div class="foreground-overlay">
-            <h2 class="text-primary text-3xl my-2 font-bold">
-              absorbentcotton.org
-            </h2>
-            <p class="text-txt-color text-base">Company's Portfolio</p>
-            <div class="flex flex-wrap gap-1 my-1">
-              <span class="badge">WordPress</span>
-              <span class="badge">Elementor</span>
-            </div>
-            <a
-              class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
-              href="https://absorbentcotton.org/"
-              target="_blank"
-            >
-              View</a
-            >
-          </div>
-        </div>
-
-        <div class="relative p-1 s-shadow bg-primary dark:bg-[#3b3b3b] fade-up">
-          <img class="object-cover" src="images/mini-js-project.png" alt="" />
-          <div class="foreground-overlay">
-            <h2 class="text-primary text-3xl my-2 font-bold">
-              30+ Js Projects
-            </h2>
-            <p class="text-txt-color text-base">JavaScript Projects</p>
-            <div class="flex flex-wrap gap-1 my-1">
-              <span class="badge">JavaScript</span>
-              <span class="badge">CSS</span>
-              <span class="badge">HTML</span>
-            </div>
-            <div class="my-2 flex justify-center gap-2 w-full items-center">
-              <a
-                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
-                href="https://sahilsonvane.github.io/30-plus-mini-js-projects/"
-                target="_blank "
-              >
-                View</a
-              >
-              <a
-                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
-                href="https://github.com/sahilsonvane/30-plus-mini-js-projects"
-                target="_blank "
-              >
-                Code</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="relative p-1 s-shadow bg-primary dark:bg-[#3b3b3b] fade-up">
-          <img class="object-cover" src="images/cvmaker.png" alt="" />
-          <div class="foreground-overlay">
-            <h2 class="text-primary text-3xl my-2 font-bold">Cv Maker</h2>
-            <p class="text-txt-color text-base">A Cv builder Tool</p>
-            <div class="flex flex-wrap gap-1 my-1">
-              <span class="badge">PHP</span>
-              <span class="badge">MySQL</span>
-              <span class="badge">JavaScript</span>
-            </div>
-            <div class="my-2 flex justify-center gap-2 w-full items-center">
-              <a
-                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
-                href="https://cvmaker.42web.io/"
-                target="_blank "
-              >
-                View</a
-              >
-              <a
-                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
-                href="https://github.com/sahilsonvane/php-cv-maker-app"
-                target="_blank "
-              >
-                Code</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="relative p-1 s-shadow bg-primary dark:bg-[#3b3b3b] fade-up">
-          <img class="object-cover" src="images/fcc-projects.png" alt="" />
-          <div class="foreground-overlay">
-            <h2 class="text-primary text-3xl my-2 font-bold">
-              Projects of FCC
-            </h2>
-            <p class="text-txt-color text-base">Responsive Web Designs</p>
-            <div class="flex flex-wrap gap-1 my-1">
-              <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
-            </div>
-            <div class="my-2 flex justify-center gap-2 w-full items-center">
-              <a
-                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
-                href="https://sahilsonvane.github.io/projects-for-fcc/"
-                target="_blank "
-              >
-                View</a
-              >
-              <a
-                class="text-white text-sm bg-primary rounded my-1 px-3 py-1"
-                href="https://github.com/sahilsonvane/projects-for-fcc"
-                target="_blank "
-              >
-                Code</a
-              >
-            </div>
-          </div>
-        </div>
+        <!-- Projects info will appear via Js-->
       </div>
     </section>
 
@@ -685,42 +513,10 @@
         </h2>
       </div>
       <div
-        class="w-full lg:px-[10%] px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5 lg:items-center lg:justify-evenly"
+        id="certificates"
+        class="w-full lg:px-[10%] px-4 grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 lg:items-center lg:justify-evenly"
       >
-        <div class="h-64 relative certificate-container fade-up">
-          <img
-            class="w-full h-full object-cover object-center"
-            src="images/js-certificate.png"
-            alt=""
-          />
-          <div class="foreground-overlay">
-            <i class="popup-trigger fa fa-eye text-3xl text-primary"></i>
-            <p class="text-lg text-txt-color">Javascript Essential Program</p>
-          </div>
-        </div>
-
-        <div class="h-64 relative certificate-container fade-up">
-          <img
-            class="w-full h-full object-cover object-center"
-            src="images/fcc-certificate.png"
-            alt=""
-          />
-          <div class="foreground-overlay">
-            <i class="popup-trigger fa fa-eye text-3xl text-primary"></i>
-            <p class="text-lg text-txt-color">Responsive Web Design by FCC</p>
-          </div>
-        </div>
-        <div class="h-64 relative certificate-container fade-up">
-          <img
-            class="w-full h-full object-cover object-center"
-            src="images/react-certificate.png"
-            alt=""
-          />
-          <div class="foreground-overlay">
-            <i class="popup-trigger fa fa-eye text-3xl text-primary"></i>
-            <p class="text-lg text-txt-color">React Certification Program</p>
-          </div>
-        </div>
+        <!-- the certificate will come here via js -->
 
         <!-- Popup Modal -->
         <div id="image-popup" class="popup-modal hidden fixed inset-0 z-50">
@@ -741,6 +537,7 @@
             </button>
           </div>
         </div>
+        <!-- popup model ends here! -->
       </div>
     </section>
 
@@ -804,11 +601,11 @@
         <!-- Contact Form -->
         <div
           id="contact-form"
-          class="w-[85%] md:w-[500px] lg:w-[400px] text-txt-color bg-gray-100 dark:bg-[#3b3b3b] fade-up self-center py-[60px] px-5 lg:px-10 mb-[-40px] lg:mb-[-70px] s-shadow"
+          class="w-[85%] md:w-[500px] lg:w-[400px] text-txt-color bg-gray-100 dark:bg-[#3b3b3b] fade-up self-center py-[60px] px-5 lg:px-10 mb-[-40px] lg:mb-[-70px] s-shadow rounded-xl"
         >
           <form id="form" class="flex flex-col gap-5">
             <div><h2 class="text-xl font-bold text-center">Message Me</h2></div>
-            <div class="flex border border-gray-7">
+            <div class="flex border border-gray-7 rounded-sm">
               <i class="fa-solid fa-user border-r border-gray-7 p-2"></i
               ><input
                 id="client-name"
@@ -818,7 +615,7 @@
                 required
               />
             </div>
-            <div class="flex border border-gray-7">
+            <div class="flex border border-gray-7 rounded-sm">
               <i class="fa-solid fa-envelope border-r border-gray-7 p-2"></i
               ><input
                 id="client-email"
@@ -828,7 +625,7 @@
                 required
               />
             </div>
-            <div class="flex border border-gray-7">
+            <div class="flex border border-gray-7 rounded-sm">
               <textarea
                 id="client-message"
                 type="text"
@@ -840,7 +637,7 @@
               id="submit"
               type="submit"
               value="Send"
-              class="rounded-2xl py-2 bg-accent text-gray-200"
+              class="rounded-2xl py-2 bg-accent text-gray-200 cursor-pointer"
             />
             <p
               id="success"
@@ -884,7 +681,6 @@
               class="bg-gray-100 p-1 rounded-full"
               ><img class="w-11" src="images/instagram.png" alt="Instagram"
             /></a>
-            
           </div>
         </div>
       </div>

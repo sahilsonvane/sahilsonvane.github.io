@@ -1,10 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 :root{
-
-/* blue theme ---> */
     --primary-color: #009F88;   
     --secondary-color: #737CA1;   
     --accent-color: #30817f ;
@@ -12,48 +10,28 @@
     --text: #222;
     --hero-bg: linear-gradient(135deg, #E5EDF1, #009f8790, #E5EDF1);
     --overlay: rgba(255,255,255,0.5);
-
-    /* --primary-color: #6F00FF;   
-    --secondary-color: #737CA1;   
-    --accent-color: #1f2937 ;
-    --background-color: #ecf0f1;
-    --text: #222;
-    --hero-bg: linear-gradient(135deg, #E5EDF1, #96C2DB, #E5EDF1);
-    --overlay: rgba(255,255,255,0.5); */
-
-/* Purple light theme */
-    /* --primary-color: #7026ed;    
-    --scondary-color: #6b7280;   
-    --accent-color: #470e9d ;
-    --background-color: #dde2ff;
-    --text: #1a033b;
-    --hero-bg: linear-gradient(135deg, #E5EDF1, #470e9d, #E5EDF1);
-    --overlay: rgba(255,255,255,0.5); */
-
-
-/* Cherry red theme */
-    /* --primary-color: #5DB075  ;    
-    --scondary-color: #83D99A  ;   
-    --accent-color: #36802D  ;
-    --background-color: #F2F5EB  ;
-    --text: #444;
-    --hero-bg: linear-gradient(135deg, #E5EDF1, #36802D , #E5EDF1);
-    --overlay: rgba(255,255,255,0.5); */
-
+    --shadow-color: #00000059;
 }
 
 .dark{
-    --primary-color: #2272FF;    
-    --secondary-color: #b3b3b3;   
-    --accent-color: #1254c0 ;
-    --background-color: #252525;
-    --text: #f2f2f2;
-    --hero-bg: linear-gradient(135deg, #282829, #3b68b8c5,  #272729);
-    --overlay: rgba(0,0,0,0.3);
+   
+    --primary-color: #1abc9c;         /* teal */
+    --secondary-color: #95a5a6;       /* soft gray */
+    --accent-color: #16a085;          /* deep green */
+    --background-color: #1e1e1e;      /* dark base */
+    --text: #ecf0f1;                  /* light text */
+    --hero-bg: linear-gradient(135deg, #1e1e1e, #145c58c7, #2c3e50);
+    --overlay: rgba(0, 0, 0, 0.4);
+    --shadow-color: #675f5f59;
+
 }
 
-@layer components{
-.badge{
-    @apply px-2 py-1 border border-txt-color text-txt-color text-sm;
-  }
+@theme {
+    --color-primary: var(--primary-color);
+    --color-secondary:var(--secondary-color);
+    --color-accent:var(--accent-color);
+    --color-bg-color:var(--background-color);
+    --color-txt-color:var(--text);
+    --color-overlay:var(--overlay);
+    --color-gray-7:var(--text-gray);
 }

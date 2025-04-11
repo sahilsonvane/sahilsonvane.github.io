@@ -2,6 +2,155 @@ const navBar = document.getElementById("navbar");
 const menuIcon = document.getElementById("menu-icon");
 const navItem = document.getElementById("nav-item");
 
+
+// function to add projects on the projectDiv dynamically
+const projectDiv = document.getElementById("projectDiv")
+const projects = [
+  {
+    name: "Priyarawsupplies.in",
+    image:  "images/priya-enterprises.png",
+    desc: "Ecommerce Web store",
+    tech: ["WordPress","Woocommerce"],
+    link: "https://priyarawsupplies.in/",
+  },
+  {
+    name: "Soosoapy.in",
+    image: "images/sosoapy.png",
+    desc: "Ecommerce Web store",
+    tech: ["WordPress","Woocommerce"],
+    link: "https://soosoapy.in/",
+  },
+  {
+    name: "Absorbentcotton.org",
+    image: "images/inm.png",
+    desc: "Company's Portfolio",
+    tech: ["WordPress","Elementor"],
+    link: "https://absorbentcotton.org/",
+  },
+  {
+    name: "React Chat App",
+    image: "images/react-chat-app.png",
+    desc: "Frontend Project",
+    tech: ["React","JavaScript","CSS"],
+    link: "https://react-chat-app-0vk7.onrender.com/",
+    code: "https://github.com/sahilsonvane/react-chat-app",
+  },
+  {
+    name: "Food Delivery App",
+    image: "images/mern-food-del-app.png",
+    desc: "MERN Stack Project",
+    tech: ["MERN","Javascript","CSS","HTML"],
+    link: "https://food-delivery-app-zkmf.onrender.com/",
+    code: "https://github.com/sahilsonvane/food-delivery-app",
+  },
+  {
+    name: "React Blog App",
+    image: "images/react-blog-app.png",
+    desc: "Frontend Project",
+    tech: ["React","JavaScript","Tailwindcss",],
+    link: "https://react-blog-app-4vrc.onrender.com/",
+    code: "https://github.com/sahilsonvane/react-blog-app",
+  },
+  {
+    name: "30+ Js Projects",
+    image: "images/mini-js-project.png",
+    desc: "JavaScript Projects",
+    tech: ["JavaScript","CSS","HTML"],
+    link: "https://sahilsonvane.github.io/30-plus-mini-js-projects/",
+    code: "https://github.com/sahilsonvane/30-plus-mini-js-projects",
+  },
+  {
+    name: "Cv Maker",
+    image: "images/cvmaker.png",
+    desc: "A Cv builder Tool",
+    tech: ["PHP","MySQL","Javascript"],
+    link: "https://github.com/sahilsonvane/php-cv-maker-app",
+    code: "https://github.com/sahilsonvane/php-cv-maker-app",
+  },
+  {
+    name: "Projects of FCC",
+    image: "images/fcc-projects.png",
+    desc: "Responsive Web Designs",
+    tech: ["JavaScript","CSS","HTML"],
+    link: "https://sahilsonvane.github.io/projects-for-fcc/",
+    code: "https://github.com/sahilsonvane/projects-for-fcc",
+  },
+
+]
+projects.map((item,index)=>{
+  projectDiv.innerHTML += `<div key=${index} class="relative s-shadow  rounded-md lg:rounded-xl fade-up">
+          <img class="object-cover rounded-md lg:rounded-xl" src=${item.image} />
+          <div class="foreground-overlay">
+            <h2 class="text-primary text-base md:text-2xl my-1 md:my-2 font-bold">${item.name}</h2>
+            <p class="text-txt-color text-sm md:text-base">${item.desc}</p>
+            <div class="flex justify-center flex-wrap gap-1 my-1">
+              ${item.tech.map((item) => `<span class="badge">${item}</span>`).join(" ")}
+            </div>
+            <div class="my-1 md:my-2 flex justify-center gap-2 w-full items-center">
+            <a
+              class="text-white text-xs md:text-sm bg-primary rounded my-1 px-1.5 md:px-3 py-1"
+              href=${item.link}
+              target="_blank"
+            >
+              View
+            </a>
+            ${item.code ? `<a
+                class="text-white text-xs md:text-sm bg-primary rounded my-1 px-1.5 md:px-3 py-1"
+                href="${item.code}"
+                target="_blank "
+              >
+                Code</a
+              >` : ""}
+              </div>
+          </div>
+        </div>`
+})
+
+// function to add certificates on the container
+const certificateDiv = document.getElementById("certificates")
+const certificates = [
+  {
+    url: "images/fcc-certificate.png",
+    name: "Responsive Web Desing"
+  },
+  {
+    url: "images/fcc-js-certificate.png",
+    name: "Javascript Algorithms and Data Structures"
+  },
+  {
+    url: "images/fcc-frontend-certificate.png",
+    name: "Frontend Development Libraries"
+  },
+  {
+    url: "images/hackerrank-react-certificate.png",
+    name: "Hackerrank React Accomplishment"
+  },
+  {
+    url: "images/js-certificate.png",
+    name: "Javascript Essential Program"
+  },
+  {
+    url: "images/react-certificate.png",
+    name: "React Certification Program"
+  },
+]
+
+
+certificates.map((item,index)=> (
+  certificateDiv.innerHTML += ` <div key=${index} class="h-32 md:h-52  lg:h-64 relative fade-up rounded-md lg:rounded-xl certificate-container s-shadow">
+          <img
+            class="w-full h-full object-cover object-center rounded-md lg:rounded-xl"
+            src=${item.url}
+            alt=${item.name+" image"}
+          />
+          <div class="foreground-overlay">
+            <i class="popup-trigger fa fa-eye text-xl lg:text-3xl text-primary"></i>
+            <p class="text-sm text-center lg:text-lg text-txt-color">${item.name}</p>
+          </div>
+        </div>`
+))
+
+
 document.addEventListener("scroll", () => {
   if (scrollY > 0) {
     navBar.classList.add("scroll");
@@ -22,7 +171,7 @@ menuIcon.addEventListener("change", (e) => {
 const switchBtn = document.getElementById("switch-btn");
 
 if (localStorage.getItem("theme-mode") == null) {
-  localStorage.setItem("theme-mode", "dark");
+  localStorage.setItem("theme-mode", "light");
 }
 
 let localData = localStorage.getItem("theme-mode");
@@ -63,7 +212,6 @@ function sendEmail() {
     clientEmail.value +
     " <br/> Message For Me : " +
     clientMessage.value;
-  console.log(emailBody);
 
   Email.send({
     SecureToken: "65c47473-c2aa-47e9-920f-c05aface3eef",
